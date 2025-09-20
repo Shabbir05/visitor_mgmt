@@ -36,7 +36,6 @@ This is a backend implementation of a **Visitor Management System** built with *
 * **SQLAlchemy** – ORM for database models
 * **Pydantic** – request/response validation
 * **Uvicorn** – ASGI server
-* **Docker** (optional) – for containerization in production
 * **JWT** – authentication and authorization
 
 ---
@@ -61,8 +60,6 @@ visitor-management/
 │── tests/                   # Unit tests
 │── requirements.txt
 │── README.md
-│── Dockerfile               # For deployment
-│── docker-compose.yml       # For deployment
 ```
 
 ---
