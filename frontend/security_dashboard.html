@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Security Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Security Dashboard</h1>
+
+    <h2>Create Visitor</h2>
+    <form id="createVisitorForm">
+      <input
+        type="text"
+        id="visitorName"
+        placeholder="Visitor Name"
+        required
+      /><br />
+      <input
+        type="text"
+        id="visitorPhone"
+        placeholder="Visitor Phone"
+        required
+      /><br />
+      <select id="visitorType">
+        <option value="temporary">Temporary</option>
+        <option value="recurring">Recurring</option></select
+      ><br />
+      <select id="residentSelect">
+        <option value="">Select Resident</option></select
+      ><br />
+      <button type="submit">Create Visitor</button>
+    </form>
+
+    <h2>Visitors Today</h2>
+    <div id="visitors-today"></div>
+
+    <script src="js/security_dashboard.js"></script>
+  </body>
+</html>

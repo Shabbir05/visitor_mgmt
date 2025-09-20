@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VMS Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to Visitor Management System</h2>
+        <p id="welcomeMessage"></p>
+        <a href="login.html">Logout</a>
+    </div>
+
+    <script>
+        const token = localStorage.getItem("token");
+        if(!token){
+            window.location.href = "login.html";
+        } else {
+            document.getElementById("welcomeMessage").innerText = "Logged in successfully!";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+fastapi==0.111.0          # API framework
+uvicorn==0.30.1           # ASGI server (runs FastAPI)
+
+sqlalchemy==2.0.30        # ORM for MySQL
+pymysql==1.1.1            # MySQL driver for SQLAlchemy
+
+alembic==1.13.1           # DB migrations
+
+pydantic==2.8.2           # Request/response validation
+python-jose==3.3.0        # JWT handling
+passlib[bcrypt]==1.7.4    # Password hashing
+
+pytest==8.2.1             # Testing
+httpx==0.27.0             # Test client for FastAPI
